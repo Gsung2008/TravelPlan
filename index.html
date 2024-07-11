@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>싱가포르 여행 가이드</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-size: 24px; /* 폰트 사이즈 조정 */
+      font-weight: bold; /* 폰트 굵기 조정 */
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      margin-bottom: 30px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .bg-light {
+      background-color: #f8f9fa !important;
+    }
+    .bg-primary {
+      background-color: #5CD1E5 !important;
+      color: white;
+    }
+    .bg-secondary {
+      background-color: #5F00FF !important;
+      color: white;
+    }
+    .bg-success {
+      background-color: #002266 !important;
+      color: white;
+    }
+    .bg-info {
+      background-color: #1DDB16 !important;
+      color: white;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .carousel-inner img,
+    .attraction-item img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .attraction-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn-details {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 내비게이션 바 - 항목을 변경하거나 추가할 수 있습니다 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">싱가포르 여행 가이드 - 10221 한지성</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#overview">개요</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">역사</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#attractions">관광지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">여행 팁</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 개요 섹션 -->
+  <section id="overview" class="section bg-primary">
+    <div class="container">
+      <h2 class="text-center">개요</h2>
+      <p>싱가포르는 동남아시아의 작은 섬나라이자 항구도시로 이루어진 도시국가이다. 빠른 경제발전을 통해 높은 건물들과 유니버셜 스튜디오까지 있는 나라로 성장했고 일인당 GDP가 약 8만 달러로 한국보다 무려 2배이상이나 높다.</p>
+      <!-- 이미지 슬라이드 - 이미지를 변경하려면 src 속성 값을 수정하세요 -->
+      <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/싱가포르 국기.webp" class="d-block w-100" alt="싱가포르 개요 1">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/싱가포르 지도.jpg" class="d-block w-100" alt="싱가포르 개요 2">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/싱가폴 지도.jpg" class="d-block w-100" alt="싱가포르 개요 3">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/싱가포르 관광지도.png" class="d-block w-100" alt="싱가포르 개요 4">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/싱가포르 약도.png" class="d-block w-100" alt="싱가포르 개요 5">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#overviewCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">이전</span>
+        </a>
+        <a class="carousel-control-next" href="#overviewCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">다음</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 역사 섹션 -->
+  <section id="history" class="section bg-secondary">
+    <div class="container">
+      <h2 class="text-center">역사</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/14세기.jpg" alt="싱가포르 역사 1" class="img-fluid">
+            <p>14세기 중세 싱가포르</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/독립전.jpg" alt="싱가포르 역사 2" class="img-fluid">
+            <p>근대 독립 전의 싱가포르</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/독립후.jpg" alt="싱가포르 역사 3" class="img-fluid">
+            <p>독립 후의 싱가포르</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 역사 1 -->
+  <div class="modal fade" id="historyModal1" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel1">역사 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_history1.jpeg" alt="싱가포르 역사 1" class="img-fluid">
+          <p>현재 싱가포르의 역사는 근대시대부터 다루고 있지만 역사적으로는 14세기에 이 섬에 상당한 무역정착지가 있었다는 증거가 발견되었다. 당시 왕국의 왕은 파라메스와라였는데, 그가 마자파힛과 샴에게 추방되었다는 기록외에 14세기 싱가포르의 왕조는 발견된 것이 없다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 2 -->
+  <div class="modal fade" id="historyModal2" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel2">역사 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_history2.jpeg" alt="싱가포르 역사 2" class="img-fluid">
+          <p>1819년 영국의 정치가 스탬포드 래플스가 싱가포르 섬에 영국인이 무역항을 두는 것을 허용하는 조약을 조호르와 협상한 끝에 싱가포르 식민지를 건설했다. 제2차 세계 대전 중 싱가포르는 1942년부터 일본 제국에 점령당했다. 1945년 일본 제국이 항복하자 싱가포르는 영국 식민지로 되돌아갔으나, 말레이시아 연방에 합병되면서 1963년 영국으로부터 독립하였다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 3 -->
+  <div class="modal fade" id="historyModal3" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel3">역사 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_history3.jpeg" alt="싱가포르 역사 3" class="img-fluid">
+          <p>1963년 말레이시아 연방을 통해 독립하지만, 1965년 이 연방과 갈등을 겪는 과정에서 연방을 탈퇴하였다. 심각한 실업과 주택 위기에 직면한 싱가포르는 1960년대 후반부터 1970년대까지 제조업 건설, 대규모 공공 주택 단지 개발, 공교육에 대한 막대한 투자에 중점을 둔 현대화 프로그램에 착수하였다. 그 결과, 아시아에서 가장 높은 GDP지수를 나타냈고, 유엔 인간개발지수에서 9위를 기록했다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 관광지 섹션 -->
+  <section id="attractions" class="section bg-success">
+    <div class="container">
+      <h2 class="text-center">관광지</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/마리나베이.jpg" alt="마리나 베이" class="img-fluid">
+            <p>아시아 최고의 호텔. 그 내부에 있는 수많은 관광명소</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/가든스바이더베이.webp" alt="가든스 바이 더 베이" class="img-fluid">
+            <p>자연과 인문의 조화. 밤의 어두움을 화려하게 밝히는 식물타워의 레이저쇼</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/유스.jpg" alt="유니버셜 스튜디오" class="img-fluid">
+            <p>작은 섬에 있는 세계적으로 유명한 놀이공원. 작아도 있을 것들은 다 있다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 관광지 1 -->
+  <div class="modal fade" id="attractionModal1" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel1">마리나 베이</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_attraction1.jpeg" alt="마리나 베이" class="img-fluid">
+          <p>싱가포르 마리나베이는 사실 호텔이다. 하지만 최상층에 있는 스카이 라운지 전망대와 그 아래층에 있는 수영장, 인피니티 풀을 즐기기 위해 호텔을 마리나베이로 예약하지 않은 사람들도 꼭 한번씩은 와본다. 마리나베이의 하루 숙박료는 63만원대로 꽤나 비싸다. 전망대 인피니티풀 외에도 최상급 식당들, 분수 등의 볼거리가 많으므로 꼭 한번은 가봐야 한다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 2 -->
+  <div class="modal fade" id="attractionModal2" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel2">가든스 바이 더 베이</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_attraction2.jpeg" alt="가든스 바이 더 베이" class="img-fluid">
+          <p>가든스 바이 더 베이는 엄청나게 큰 정원인데, 마리나베이에서 야외 엘레베이터를 타고 내려가면 바로 볼 수 있다. 가든스 바이 더 베이는 그 자연환경도 인기가 많지만 중앙에 있는 식물타워들이 진짜 볼거리라고 할 수 있다. 이 식물타워들은 낮에 볼때에도 그 웅장함이 느껴지지만 밤이 되고 레이저쇼를 시작하게 되면 그 화려함은 호텔내부에서도 보인다고 한다. 그리고 그 식물사이를 지나는 하늘다리도 운영하니 한번 올라가보는것도 좋은 선택이다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 3 -->
+  <div class="modal fade" id="attractionModal3" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel3">유니버셜 스튜디오</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_attraction3.jpeg" alt="유니버셜 스튜디오" class="img-fluid">
+          <p>싱가포르에는 유니버셜 스튜디오가 있다. 비록 다른 곳들에 비해 스튜디오가 작지만 재미있는 놀이기구가 꽤 많고 먹을거리, 볼 거리등이 충분하기에 한 번 가보는것을 추천한다. 좁은 지역에 밀집해 있기에 비교적 돌아다니기 쉽다. 개인적으로는 그곳에 있는 롤러코스터가 한국의 그 어떤 놀이기구보다 재미있었다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 여행 팁 섹션 -->
+  <section id="tips" class="section bg-info">
+    <div class="container">
+      <h2 class="text-center">여행 팁</h2>
+      <ul>
+        <li>방문하기 좋은 시기: 봄 (2월~4월)</li>
+        <li>언어: 중국어,영어. 꽤 많은 사람들이 보편적으로 영어를 사용할 수 있지만, 중국어 억양이 섞여서 잘 알아듣지 못할 수 있으므로 중국어를 배워두면 좋다.</li>
+        <li>통화: 싱가포르 달러 (SGD).</li>
+        <li>교통: 싱가포르는 지하철이 매우 활발하게 개통되어 있으니 교통카드를 하나 만들어서 다니는 것이 편하다.</li>
+		<li>옷차림: 동남아시아여서 무조건 반팔, 반바지가 좋지만 싱가포르는 법적으로 건물에서 에어컨을 상시 가동하도록 강제했기 때문에 겉옷을 하나 들고 가는 것이 좋다.</li>
+      </ul>
+      <div class="text-center">
+        <!-- 여기에 YouTube 동영상 링크를 추가하세요 -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uwO3lekxkx4?si=oowk6x6Yes0O18cY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <p>&copy; 2024 싱가포르 여행 가이드. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
